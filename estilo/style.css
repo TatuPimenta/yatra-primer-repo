@@ -1,0 +1,654 @@
+html{
+    font-size: 62.5%;
+}
+
+*{
+    color: aliceblue;
+    background-color: #000000;
+}
+
+header{
+    grid-area: header;
+}
+
+.section1{
+    grid-area: section1;
+}
+
+.section2{
+    grid-area: section2;
+}
+
+.section3{
+    grid-area: section3;
+}
+
+footer{
+    grid-area: footer;
+}
+
+/*ERROR DE SCROLL HORIZONTAL CON WIDTH 1600x900*/
+
+.grid{
+    display: grid;
+    /*width: 100%;*/
+    height: 100%;
+    /*gap: 1rem;*/
+    grid-template-areas: 
+    "header"
+    "section1"
+    "section2"
+    "section3"
+    "footer";
+}
+
+.grid2{
+    display: grid;
+    /*width: 100%;*/
+    height: 100%;
+    grid-template-areas: 
+    "header"
+    "section1"
+    "section2"
+    "footer";
+}
+
+nav{
+    background-color: rgb(0, 0, 0);
+}
+
+/*footer{
+    border: 3rem solid yellow;
+    background-color: yellow;
+}
+*/
+
+header nav ul li{
+    font-size: 2rem;
+    display: inline-block;
+    margin: 0 0 0 19rem;
+}
+
+.cuadros{
+    border: 0.1rem solid black;
+    background-color: rgb(255, 238, 2);
+    color: rgb(54, 54, 48);
+    
+}
+
+.icono-yatra{
+    width:10rem;
+    height:10rem;
+    border-radius:6rem;
+    border:1rem solid rgb(230, 247, 5);
+    
+}
+
+.granfoto{
+    width: 100%;
+}
+
+.titulos{
+    /*background-color: rgb(255, 255, 0);*/
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(238,232,8,1) 50%, rgba(0,0,0,1) 100%);
+    color: black;
+    text-align: center;
+    font-size: 3.5rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: oblique;
+}
+
+.historia{
+    font-size: 2.3rem;
+    text-indent: 4rem;
+}
+
+#album{
+    background-color: rgb(255, 255, 0);
+    font-size: 3rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: oblique;
+}
+
+ul{
+    list-style: none;  
+}
+
+.albumes{
+    margin: 4rem 0 1rem 12rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+.books{
+    margin: 0 auto;
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 2rem;
+}
+
+.links{
+    display: flex;
+    justify-content: center;
+}
+
+#redes{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 5rem;
+    background-color: yellow;
+}
+
+i{
+    background-color: yellow;
+    color:rgb(0, 0, 0);
+}
+
+.botones{
+    display: flex;
+    flex-direction: column;
+}
+
+.button{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.canciones{
+    border: solid 0.1rem yellow;
+    /*margin-left: 4rem;*/
+    background-color: #fff400;
+    background-image: linear-gradient(90deg, #fff400 0%, #000000 18%, #000000 82%, #fff400 99%);
+}
+
+#fantasia{
+    margin-left: 3rem;
+}
+
+
+#mantra{
+    margin-left: 6rem;
+}
+
+#extended{
+    margin-left: 9rem;
+}
+
+.textos{
+    display: flex;
+    justify-content: space-around;
+}
+
+.parrafos{
+    font-size: 1.5rem;
+    margin-left: 2.5rem;
+    padding: 1.5rem;
+    content: normal;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#p_dharma{
+    margin: 0 7rem 2rem 4rem;
+    text-align: center;
+}
+
+#p_fantasia{
+    margin: 0 0 2rem 3rem;
+    text-align: center;
+}
+
+#p_mantra{
+    margin: 0 0 2rem 7.3rem;
+    text-align: center;
+}
+
+#p_extended{
+    margin-top: 0;
+    text-align: center;
+}
+
+.video{
+    display: flex;
+    justify-content: center;
+}
+
+.separador{
+    margin-bottom: 5rem;
+}
+
+/*SEGUNDA HOJA*/
+
+#redes_unete{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 5rem;
+    background-color: yellow;
+}
+
+
+.p_register{
+    font-size: 4rem;
+    text-indent: 4rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    color: black;
+    margin-left: -2rem;
+
+}
+
+.registra{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    color: gray;
+}
+
+.input{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+}
+
+.registrarse{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    color: black;
+}
+
+.white{
+    background-color: white;
+}
+
+#centrar_text{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    color: black;
+    margin-left: -3rem;
+}
+
+#centrar_texto{
+    display: flex;
+    justify-content: center;
+}
+
+.fans{
+    margin: 0 auto;
+    margin-left: 5rem;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+}
+
+p{
+    margin: 2rem 4rem 1rem 4rem;
+    text-align: justify;
+}
+
+@media (max-width: 1366px){
+    .icono-yatra{
+        width: 5rem;
+        height:5rem;
+        border-radius:6rem;
+        border:1rem solid rgb(230, 247, 5);   
+    }
+
+    header nav ul li{
+        font-size: 2rem;
+        display: inline-block;
+        margin: 0 0 0 15rem;
+    }
+
+    .albumes{
+        margin: 4rem 0 1rem 8rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    #fantasia{
+        margin-left: 1rem;
+    }
+    
+    
+    #mantra{
+        margin-left: 3rem;
+    }
+    
+    #extended{
+        margin-left: 4rem;
+    }
+
+    .books{
+        margin: 0 auto;
+        width: 80%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 2rem;
+    }
+    
+    .fans{
+        margin: 0 auto;
+        width: 80%;
+        margin-left: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 1rem;
+    }
+}
+
+@media (max-width: 1110px){
+    header nav ul li{
+        font-size: 2rem;
+        display: inline-block;
+        margin: 0 0 0 10rem;
+    }
+
+    .albumes{
+        margin: 4rem 0 1rem 4rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    #fantasia{
+        margin-left: 1rem;
+    }
+    
+    
+    #mantra{
+        margin-left: 2rem;
+    }
+    
+    #extended{
+        margin-left: 3rem;
+    }
+
+    .books{
+        margin: 0 0 0 6.5rem;
+        width: 80%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 1rem;
+    }
+
+    img{
+        max-width: 100%;
+    }
+
+    .fans{
+        margin: 0 auto;
+        margin-left: 11rem;
+        width: 80%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 2rem;
+    }
+}
+
+@media (max-width: 972px){
+    header nav ul li{
+        font-size: 2rem;
+        display: inline-block;
+        margin: 0 0 0 9rem;
+    }
+
+    .albumes{
+        margin: 4rem 0 1rem 4rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    #fantasia{
+        margin-left: 0;
+    }
+    
+    
+    #mantra{
+        margin-left: 0;
+    }
+    
+    #extended{
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 840px){
+    header nav ul li{
+        font-size: 2rem;
+        display: inline-block;
+        margin: 0 0 0 7rem;
+    }    
+
+}
+
+@media (max-width: 768px){
+    header nav ul li{
+        font-size: 2rem;
+        display: inline-block;
+        margin: 0 0 0 5rem;
+    }
+
+    .textos{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    }
+
+    #p_dharma{
+        margin: 0 0 2rem 1rem;
+        text-align: center;
+    }
+    
+    #p_fantasia{
+        margin: 0 0 2rem 1rem;
+        text-align: center;
+    }
+    
+    #p_mantra{
+        margin: 0 0 2rem 1rem;
+        text-align: center;
+    }
+    
+    #p_extended{
+        margin: 0;
+        text-align: center;
+    }
+
+    .books{
+        display: grid;
+        grid-template-columns: 1fr 1fr;    
+    }
+
+    img{
+        max-width: 100%;
+    }
+
+    .fans{
+        margin: 0 auto;
+        margin-left: 20rem;
+        width: 80%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 2rem;
+    }
+
+    #register{
+        margin-left: 4rem;
+    }
+}
+
+@media (max-width: 660px){
+    header nav ul li{
+        font-size: 2rem;
+        display: inline-block;
+        margin: 0 0 0 4rem;
+    }
+
+    img{
+        max-width: 100%;
+    }
+
+    .albumes{
+        margin: 4rem 0 1rem 2rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    #fantasia{
+        margin-left: 0;
+    }
+    
+    
+    #mantra{
+        margin-left: 0;
+    }
+    
+    #extended{
+        margin-left: 0;
+    }
+
+    .fans{
+        margin: 0 auto;
+        margin-left: 10rem;
+        width: 80%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 2rem;
+    }
+}
+
+@media (max-width: 580px){
+    header nav ul li{
+        font-size: 2rem;
+        display: inline-block;
+        margin: 0;
+    }
+
+    nav{
+        margin-left: 7rem;
+    }
+}
+
+@media (max-width: 560px){
+    header nav ul li{
+        font-size: 2rem;
+        display: inline-block;
+        margin: 0;
+    }
+
+    nav{
+        margin-left: 7rem;
+    }
+
+    .fans{
+        margin: 0 auto;
+        margin-left: 6rem;
+        width: 80%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 2rem;
+    }
+
+}
+
+
+
+@media (max-width: 530px){
+    header nav ul li{
+        font-size: 2rem;
+        display: inline-block;
+        margin: 0;
+    }
+
+    nav{
+        margin-left: 4rem;
+    }
+
+    .botones{
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+    }
+    #fantasia{
+        margin-left: 1rem;
+    }
+    
+    
+    #mantra{
+        margin-left: 1rem;
+    }
+    
+    #extended{
+        margin-left: 2rem;
+    }
+}
+
+@media (max-width: 502px){
+    header nav ul li{
+        font-size: 2rem;
+        display: inline-block;
+        margin: 0;
+    }
+
+    nav{
+        margin-left: 4rem;
+    }
+
+    .parrafos{
+        display: none;
+    }
+
+}
+
+@media (max-width: 470px){
+    header nav ul li{
+        font-size: 2rem;
+        display: inline-block;
+        margin: 0;
+    }
+
+    nav{
+        margin-left: 0.8rem;
+    }
+
+    .books{
+        margin: 0 auto;
+        width: 80%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 2rem;
+    }
+}
+
+@media (max-width: 361px){
+    header nav ul li{
+        font-size: 1.8rem;
+        display: inline-block;
+        margin: 0;
+    }
+    nav{
+        margin-left: 0;
+    }
+
+    .fans{
+        margin: 0 auto;
+        margin-left: 3rem;
+        width: 80%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 2rem;
+    }
+}
